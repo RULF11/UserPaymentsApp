@@ -44,7 +44,6 @@ class PaymentsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let model = presenter.paymentsModel[indexPath.row]
         showDetailInfo(with: model)
-        navigationController?.popToRootViewController(animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

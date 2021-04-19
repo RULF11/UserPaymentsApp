@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		40EA243F262B38DC00888B9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EA243E262B38DC00888B9C /* AppDelegate.swift */; };
 		40EA2441262B38DC00888B9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EA2440262B38DC00888B9C /* SceneDelegate.swift */; };
-		40EA2443262B38DC00888B9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EA2442262B38DC00888B9C /* ViewController.swift */; };
 		40EA2446262B38DC00888B9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40EA2444262B38DC00888B9C /* Main.storyboard */; };
 		40EA2448262B38E000888B9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40EA2447262B38E000888B9C /* Assets.xcassets */; };
 		40EA244B262B38E000888B9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40EA2449262B38E000888B9C /* LaunchScreen.storyboard */; };
+		40EA2456262B3C6300888B9C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EA2455262B3C6200888B9C /* NetworkManager.swift */; };
+		40EA2461262B427300888B9C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EA2460262B427300888B9C /* LoginViewController.swift */; };
+		40EA2466262B522D00888B9C /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EA2465262B522D00888B9C /* LoginPresenter.swift */; };
+		40EA2474262B627000888B9C /* PaymentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EA2473262B627000888B9C /* PaymentsPresenter.swift */; };
+		40EA247E262B62F300888B9C /* PaymentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EA247D262B62F300888B9C /* PaymentsTableViewController.swift */; };
+		40EA2482262B6C3900888B9C /* SetupScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EA2481262B6C3800888B9C /* SetupScenes.swift */; };
+		40EA248C262C4A1400888B9C /* PaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EA248B262C4A1400888B9C /* PaymentTableViewCell.swift */; };
+		40EA248F262C842600888B9C /* PaymentModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EA248E262C842500888B9C /* PaymentModels.swift */; };
+		40EA2493262C84B400888B9C /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EA2492262C84B400888B9C /* LoginModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40EA243B262B38DC00888B9C /* UserPaymentsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserPaymentsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40EA243E262B38DC00888B9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40EA2440262B38DC00888B9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		40EA2442262B38DC00888B9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		40EA2445262B38DC00888B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40EA2447262B38E000888B9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40EA244A262B38E000888B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40EA244C262B38E000888B9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40EA2455262B3C6200888B9C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		40EA2460262B427300888B9C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		40EA2465262B522D00888B9C /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		40EA2473262B627000888B9C /* PaymentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsPresenter.swift; sourceTree = "<group>"; };
+		40EA247D262B62F300888B9C /* PaymentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsTableViewController.swift; sourceTree = "<group>"; };
+		40EA2481262B6C3800888B9C /* SetupScenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupScenes.swift; sourceTree = "<group>"; };
+		40EA248B262C4A1400888B9C /* PaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTableViewCell.swift; sourceTree = "<group>"; };
+		40EA248E262C842500888B9C /* PaymentModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModels.swift; sourceTree = "<group>"; };
+		40EA2492262C84B400888B9C /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +53,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40AC9E6B262D7C8600953EEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40EA243E262B38DC00888B9C /* AppDelegate.swift */,
+				40EA2440262B38DC00888B9C /* SceneDelegate.swift */,
+				40EA2481262B6C3800888B9C /* SetupScenes.swift */,
+				40EA244C262B38E000888B9C /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40AC9E6D262D7CB500953EEF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				40EA2447262B38E000888B9C /* Assets.xcassets */,
+			);
+			name = Resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		40EA2432262B38DC00888B9C = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +92,52 @@
 		40EA243D262B38DC00888B9C /* UserPaymentsApp */ = {
 			isa = PBXGroup;
 			children = (
-				40EA243E262B38DC00888B9C /* AppDelegate.swift */,
-				40EA2440262B38DC00888B9C /* SceneDelegate.swift */,
-				40EA2442262B38DC00888B9C /* ViewController.swift */,
-				40EA2444262B38DC00888B9C /* Main.storyboard */,
-				40EA2447262B38E000888B9C /* Assets.xcassets */,
-				40EA2449262B38E000888B9C /* LaunchScreen.storyboard */,
-				40EA244C262B38E000888B9C /* Info.plist */,
+				40AC9E6B262D7C8600953EEF /* Supporting Files */,
+				40EA2468262B531400888B9C /* LoginScene */,
+				40EA2476262B627C00888B9C /* PaymentsScene */,
+				40EA246A262B533400888B9C /* Managers */,
+				40EA246C262B534E00888B9C /* Storyboards */,
+				40AC9E6D262D7CB500953EEF /* Resources */,
 			);
 			path = UserPaymentsApp;
+			sourceTree = "<group>";
+		};
+		40EA2468262B531400888B9C /* LoginScene */ = {
+			isa = PBXGroup;
+			children = (
+				40EA2492262C84B400888B9C /* LoginModels.swift */,
+				40EA2465262B522D00888B9C /* LoginPresenter.swift */,
+				40EA2460262B427300888B9C /* LoginViewController.swift */,
+			);
+			path = LoginScene;
+			sourceTree = "<group>";
+		};
+		40EA246A262B533400888B9C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				40EA2455262B3C6200888B9C /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		40EA246C262B534E00888B9C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				40EA2444262B38DC00888B9C /* Main.storyboard */,
+				40EA2449262B38E000888B9C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		40EA2476262B627C00888B9C /* PaymentsScene */ = {
+			isa = PBXGroup;
+			children = (
+				40EA248E262C842500888B9C /* PaymentModels.swift */,
+				40EA2473262B627000888B9C /* PaymentsPresenter.swift */,
+				40EA247D262B62F300888B9C /* PaymentsTableViewController.swift */,
+				40EA248B262C4A1400888B9C /* PaymentTableViewCell.swift */,
+			);
+			path = PaymentsScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +210,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40EA2443262B38DC00888B9C /* ViewController.swift in Sources */,
+				40EA248F262C842600888B9C /* PaymentModels.swift in Sources */,
+				40EA2466262B522D00888B9C /* LoginPresenter.swift in Sources */,
+				40EA248C262C4A1400888B9C /* PaymentTableViewCell.swift in Sources */,
+				40EA2461262B427300888B9C /* LoginViewController.swift in Sources */,
+				40EA2474262B627000888B9C /* PaymentsPresenter.swift in Sources */,
+				40EA2456262B3C6300888B9C /* NetworkManager.swift in Sources */,
+				40EA2482262B6C3900888B9C /* SetupScenes.swift in Sources */,
+				40EA247E262B62F300888B9C /* PaymentsTableViewController.swift in Sources */,
 				40EA243F262B38DC00888B9C /* AppDelegate.swift in Sources */,
+				40EA2493262C84B400888B9C /* LoginModels.swift in Sources */,
 				40EA2441262B38DC00888B9C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,17 +367,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1.1;
 				DEVELOPMENT_TEAM = 4J7RU73C9J;
-				INFOPLIST_FILE = UserPaymentsApp/Info.plist;
+				INFOPLIST_FILE = "UserPaymentsApp/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = KDK.UserPaymentsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,17 +390,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1.1;
 				DEVELOPMENT_TEAM = 4J7RU73C9J;
-				INFOPLIST_FILE = UserPaymentsApp/Info.plist;
+				INFOPLIST_FILE = "UserPaymentsApp/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = KDK.UserPaymentsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eJu-ra-A3M">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="4Zu-yd-e8n">
+            <objects>
+                <navigationController id="eJu-ra-A3M" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="a0V-zH-S9b">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="eRq-rH-Ymv" kind="relationship" relationship="rootViewController" id="cKa-B1-pCB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hiI-PU-D8o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-618" y="40"/>
+        </scene>
+        <!--UserPaymentsLogin-->
+        <scene sceneID="8Jx-7R-WKa">
+            <objects>
+                <viewController id="eRq-rH-Ymv" customClass="LoginViewController" customModule="UserPaymentsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VtR-V6-4lK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="TjE-hk-JMF">
+                                <rect key="frame" x="80" y="361" width="254" height="280"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="MEr-3b-3cb">
+                                        <rect key="frame" x="0.0" y="0.0" width="254" height="96"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EJR-AS-92T">
+                                                <rect key="frame" x="0.0" y="0.0" width="254" height="34"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="continue"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ngr-fU-Oth">
+                                                <rect key="frame" x="0.0" y="62" width="254" height="34"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9A-ht-nLj">
+                                        <rect key="frame" x="0.0" y="246" width="254" height="34"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <state key="normal" title="Log on">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="postDataButton:" destination="eRq-rH-Ymv" eventType="touchUpInside" id="6kM-YB-DIR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="RWF-J3-fQi">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uXl-Il-54b"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="TjE-hk-JMF" firstAttribute="centerY" secondItem="uXl-Il-54b" secondAttribute="centerY" id="4af-Ro-as2"/>
+                            <constraint firstItem="TjE-hk-JMF" firstAttribute="leading" secondItem="uXl-Il-54b" secondAttribute="leading" constant="80" id="Q2d-JX-VzL"/>
+                            <constraint firstItem="uXl-Il-54b" firstAttribute="trailing" secondItem="TjE-hk-JMF" secondAttribute="trailing" constant="80" id="fcB-1r-nvi"/>
+                            <constraint firstItem="TjE-hk-JMF" firstAttribute="centerX" secondItem="uXl-Il-54b" secondAttribute="centerX" id="j1k-nI-iD3"/>
+                            <constraint firstItem="RWF-J3-fQi" firstAttribute="centerY" secondItem="VtR-V6-4lK" secondAttribute="centerY" id="qia-hP-VLJ"/>
+                            <constraint firstItem="RWF-J3-fQi" firstAttribute="centerX" secondItem="VtR-V6-4lK" secondAttribute="centerX" id="v7h-F7-Uuq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="UserPaymentsLogin" id="Gd2-HC-Hfc"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="RWF-J3-fQi" id="Tfh-Nt-amd"/>
+                        <outlet property="loginTextField" destination="EJR-AS-92T" id="g38-PX-4qT"/>
+                        <outlet property="passwordTextField" destination="Ngr-fU-Oth" id="SFC-Dp-GSm"/>
+                        <segue destination="v0I-TV-Tn8" kind="show" identifier="LoginToPayments" id="4Yy-0e-Tap"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OQf-X2-TKe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="39.508928571428569"/>
+        </scene>
+        <!--UserPayments-->
+        <scene sceneID="7Lh-Dg-07x">
+            <objects>
+                <tableViewController id="v0I-TV-Tn8" customClass="PaymentsTableViewController" customModule="UserPaymentsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="i9z-DN-8cc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="Xr1-Kg-O3y" customClass="PaymentTableViewCell" customModule="UserPaymentsApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xr1-Kg-O3y" id="SRm-A3-SAf">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Payment description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvF-N0-aEj">
+                                            <rect key="frame" x="20" y="13" width="140.5" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="buA-wu-qFF">
+                                            <rect key="frame" x="180" y="2.5" width="57" height="39"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQP-ao-Rb0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="57" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EcZ-me-KUj">
+                                                    <rect key="frame" x="0.0" y="19.5" width="26.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="hvF-N0-aEj" firstAttribute="centerY" secondItem="SRm-A3-SAf" secondAttribute="centerY" id="BqR-iB-I3w"/>
+                                        <constraint firstItem="hvF-N0-aEj" firstAttribute="leading" secondItem="SRm-A3-SAf" secondAttribute="leadingMargin" id="DJh-S5-vK1"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="buA-wu-qFF" secondAttribute="trailing" id="Rnt-fk-EXO"/>
+                                        <constraint firstItem="buA-wu-qFF" firstAttribute="centerY" secondItem="SRm-A3-SAf" secondAttribute="centerY" id="XMV-Vt-z0z"/>
+                                        <constraint firstItem="buA-wu-qFF" firstAttribute="leading" secondItem="SRm-A3-SAf" secondAttribute="leadingMargin" constant="160" id="gS7-3b-P2e"/>
+                                        <constraint firstItem="HQP-ao-Rb0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hvF-N0-aEj" secondAttribute="trailing" constant="15" id="s53-3f-HVC"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="amountLabel" destination="HQP-ao-Rb0" id="Xun-MM-AxW"/>
+                                    <outlet property="dateLabel" destination="EcZ-me-KUj" id="UKg-nG-BNq"/>
+                                    <outlet property="paymentDescriptionLabel" destination="hvF-N0-aEj" id="bgG-fo-8KA"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="v0I-TV-Tn8" id="MxP-VV-yWN"/>
+                            <outlet property="delegate" destination="v0I-TV-Tn8" id="B3B-Df-are"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="UserPayments" id="O6q-Cn-68Q"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2yF-bw-Rqb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969.56521739130437" y="39.508928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
